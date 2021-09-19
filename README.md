@@ -1,5 +1,7 @@
 # word-counter
 
+#https://kennyneedsmilky.github.io/kenmil-word-counter-dist/
+
 ## Project setup
 ```
 npm install
