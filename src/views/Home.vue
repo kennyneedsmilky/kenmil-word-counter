@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="page-home">
+    <h1>KenMil Word Counter</h1>
+    <word-counter></word-counter>
+    <page-footer></page-footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import WordCounter from "../components/WordCounter.vue";
+import PageFooter from "../components/PageFooter.vue";
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    WordCounter, PageFooter
   },
 };
 </script>
+
+<style scoped>
+.page-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>
