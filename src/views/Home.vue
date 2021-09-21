@@ -1,6 +1,6 @@
 <template>
   <div class="page-home">
-    <h1>KenMil Word Counter</h1>
+    <h1 class="page-home__title">KenMil Word Counter</h1>
     <word-counter></word-counter>
     <page-footer></page-footer>
   </div>
@@ -8,11 +8,10 @@
 
 <script>
 import WordCounter from "../components/WordCounter.vue";
-import PageFooter from "../components/PageFooter.vue";
 export default {
   name: "Home",
   components: {
-    WordCounter, PageFooter
+    WordCounter
   },
 };
 </script>
@@ -23,5 +22,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.page-home__title {
+  color: #f5f5f5;
 }
 </style>
